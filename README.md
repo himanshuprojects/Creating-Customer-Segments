@@ -1,40 +1,35 @@
-Content: Unsupervised Learning
-Project: Creating Customer Segments
-Install
-This project requires Python 3.6 and the following Python libraries installed:
+# Project 3: Unsupervised Learning
+## Creating Customer Segments
 
-NumPy
-Pandas
-matplotlib
-scikit-learn
-You will also need to have software installed to run and execute a Jupyter Notebook
+A wholesale distributor recently tested a change to their delivery method for some customers, by moving from a morning delivery service five days a week to a cheaper evening delivery service three days a week.Initial testing did not discover any significant unsatisfactory results, so they implemented the cheaper option for all customers. Almost immediately, the distributor began getting complaints about the delivery service change and customers were canceling deliveries — losing the distributor more money than what was being saved. You’ve been hired by the wholesale distributor to find what types of customers they have to help them make better, more informed business decisions in the future. Your task is to use unsupervised learning techniques to see if any similarities exist between customers, and how to best segment customers into distinct categories.
 
-If you do not have Python installed yet, it is highly recommended that you install the Anaconda distribution of Python, which already has the above packages and more included.
 
-Code
-Template code is provided in the customer_segments.ipynb notebook file. You will also be required to use the included visuals.py Python file and the customers.csv dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in visuals.py is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
+### Install
 
-Run
-In a terminal or command window, navigate to the top-level project directory customer_segments/ (that contains this README) and run one of the following commands:
+This project requires **Python 3.6** and the following Python libraries installed:
 
-ipython notebook customer_segments.ipynb
-or
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
 
-jupyter notebook customer_segments.ipynb
-This will open the Jupyter Notebook software and project file in your browser.
+You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
-Data
-The customer segments data is included as a selection of 440 data points collected on data found from clients of a wholesale distributor in Lisbon, Portugal. More information can be found on the UCI Machine Learning Repository.
+Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
 
-Note (m.u.) is shorthand for monetary units.
+### Code
 
-Features
+Template code is provided in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project.
 
-Fresh: annual spending (m.u.) on fresh products (Continuous);
-Milk: annual spending (m.u.) on milk products (Continuous);
-Grocery: annual spending (m.u.) on grocery products (Continuous);
-Frozen: annual spending (m.u.) on frozen products (Continuous);
-Detergents_Paper: annual spending (m.u.) on detergents and paper products (Continuous);
-Delicatessen: annual spending (m.u.) on and delicatessen products (Continuous);
-Channel: {Hotel/Restaurant/Cafe - 1, Retail - 2} (Nominal)
-Region: {Lisbon - 1, Oporto - 2, or Other - 3} (Nominal)
+### Run
+
+In a terminal or command window, navigate to the top-level project directory `creating_customer_segments/` (that contains this README) and run one of the following commands:
+
+```ipython notebook customer_segments.ipynb```
+```jupyter notebook customer_segments.ipynb```
+
+This will open the iPython Notebook software and project file in your browser.
+
+## Data
+
+The dataset used in this project is included as `customers.csv`. You can find more information on this dataset on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Wholesale+customers) page.
